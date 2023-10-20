@@ -6,8 +6,23 @@
 // NOTE: You MUST use double/nested FOR loop to solve this exercise. The array.includes() method is NOT allowed.
 
 export function separateNamesWithAFromRest(array) {
-  // Your code goes here...
-
+  var arr1 = [];
+  var arr2 = [];
+  for (var i = 0; i < array.length; i++) {
+    var hasLetter = false;
+    for (var j of array[i]) {
+      if (j === 'a') {
+      var hasLetter = true;
+      }
+    }
+    if (hasLetter === true) {
+      arr1.push(array[i]);
+    }
+    else {
+      arr2.push(array[i]);
+    }
+  }
+  return [arr1, arr2];
 }
 
 

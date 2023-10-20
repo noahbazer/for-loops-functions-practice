@@ -9,8 +9,14 @@
  * */
 
 export function getAverage(array) {
-  // Your code goes here...
+  let avsum = 0;
 
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    avsum += array[i];
+  }
+  var avg = avsum / array.length;
+  return avg;
 }
 
 
@@ -22,8 +28,19 @@ export function getAverage(array) {
  * */ 
 
 export function getStringSum(str) {
-  // Your code goes here...
+  let nums = [];
+  let sum = 0;
 
+  for (let i = 0; i < str.length; i++) {
+    if (!isNaN(Number(str[i]))) {
+      nums.push(Number(str[i]));
+    }
+  }
+  console.log(nums);
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+  }
+  return sum;
 }
 
 
