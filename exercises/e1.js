@@ -6,7 +6,7 @@
 export function getFirstTenNumbers() {
   const finalArr = [];
   var acc = 0;
-for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
   var acc = (acc + 1);
   finalArr.push(acc);
 }

@@ -9,7 +9,7 @@ export function findMinValueInArray(array) {
  if (min === undefined || array[i] < min) {
  var min = array[i];
  }}
- return min;
+return min;
 }
 
 export function findMaxValueInArray(array) {
@@ -18,7 +18,7 @@ export function findMaxValueInArray(array) {
   if (max === undefined || array[i] > max) {
   var max = array[i];
   }}
-  return max;
+return max;
 }
 
 // === TEST YOURSELF ===
