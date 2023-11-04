@@ -9,9 +9,6 @@ export function getNumbersWithSquareRoots(max) {
     if (square < max) {
         array.push(square);
     }
-    else {
-        break;
-    }
   }
   return array;
 }

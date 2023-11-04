@@ -15,8 +15,7 @@ export function getAverage(array) {
     let sum = 0;
     avsum += array[i];
   }
-  var avg = avsum / array.length;
-  return avg;
+return avsum / array.length;
 }
 
 
